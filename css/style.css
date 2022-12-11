@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+   /* #font;*/
+   background: linear-gradient(-45deg, rgb(229, 255, 0), rgb(105, 0, 241), rgb(8, 253, 61));
+   background-size: 200% 200%;
+   width: 100vw;
+   height: 100vh;
+   animation: animate 15s ease infinite;
+}
+
+footer,
+header{
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+main{
+    height: calc(100vh - 180px);
+    padding:2rem;
+    overflow-y: auto;
+}
+
+select{
+    padding: 10px 15px;
+    border-radius: 15px;
+    margin-right: 20px;
+    border: 1px solid lightgray;
+    cursor: pointer;
+    background-color: yellowgreen;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+header .row,
+footer .row{
+    height: 100%;
+    display: flex;
+}
+
+header .col{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 10px;
+}
+
+header .card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+}
+
+main .card{
+    width: 680px;
+    height: 680px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: transparent;
+}
+
+.container-head{
+    height: 100%;
+}
+
+.content{
+    width: 60%;
+}
+
+.fs-1-5{
+    font-size: 1.5rem;
+}
+
+.form-select {
+    margin-right: 20px;
+}
+
+.play-btn{
+    padding: 0 20px;
+    border-radius: 10px;
+    margin-right: 15px;
+    border: 1px solid lightgrey;
+    color: darkred;
+    cursor: pointer;
+    background: linear-gradient(-45deg, rgb(0, 255, 42), rgb(155, 78, 255), rgb(252, 249, 116));
+    background-size: 200% 200%;
+    animation: animate 15s ease infinite;
+}
+
+button:active{
+    background-color: #5eff00;
+}
+
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rebeccapurple;
+    color: #fff;
+    cursor: pointer;
+}
+
+.square.even{
+    background-color: aqua;
+    color: black;
+}
+
+.square.odd{
+    background-color: darkred;
+}
+
+.hard-field{
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+}
+
+.normal-field{
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+}
+
+.easy-field{
+    width: calc(100% / 7);
+    height: calc(100% / 7);
+}
+
+@keyframes animate{ 
+    0% {
+        background-position:0% 50%;
+    }
+    50% {
+        background-position:100% 50%;
+    }
+    100% {
+        background-position:0% 50%;
+    }
+  }
